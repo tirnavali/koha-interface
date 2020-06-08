@@ -1,0 +1,39 @@
+<nav class="navbar navbar-light">
+  <div class="">
+    <a class="navbar-brand" href="#">KOHA</a>
+    <a href="#" class="nav-sol">Sepet</a>
+    <a href="#" class="nav-sol">Listeler</a>
+  </div>
+  <div class="">
+    <div class="btn-group" dropdown>
+      <a
+        id="button-basic"
+        dropdownToggle
+        type="button"
+        class="dropdown-toggle my-2"
+        aria-controls="dropdown-basic"
+      >
+        Diller <span class="caret"></span>
+      </a>
+      <ul
+        id="dropdown-basic"
+        *dropdownMenu
+        class="dropdown-menu"
+        role="menu"
+        aria-labelledby="button-basic"
+      >
+        <li role="menuitem"><a class="dropdown-item" href="#">English</a></li>
+        <li role="menuitem"><a class="dropdown-item" href="#">German</a></li>
+        <li role="menuitem"><a class="dropdown-item" href="#">Spanish</a></li>
+        <li class="divider dropdown-divider"></li>
+        <li role="menuitem"><a class="dropdown-item" href="#">Türkçe</a></li>
+      </ul>
+      <ul class="my-2">
+        <a href="#" class="my-2">Hesabınız ile oturum açın</a>
+      </ul>
+      <ul class="my-2">
+        <a href="#">Arama geçmişi [x]</a>
+      </ul>
+    </div>
+  </div>
+</nav>

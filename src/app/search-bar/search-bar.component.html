@@ -1,0 +1,36 @@
+<div class="ara-pencere">
+  <form>
+    <div class="form-row align-items-center">
+        <div class="col-auto">Ara</div>
+      <div class="col-auto">
+        <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect"
+          >Preference</label
+        >
+        <select class="custom-select" id="inlineFormCustomSelect">
+          <option *ngFor="let secenek of aramaYeri">{{ secenek }}</option>
+        </select>
+      </div>
+      <div class="col-6">
+        <div class="custom-control ">
+          <input
+            type="text"
+            class="form-control"
+            id="customControlAutosizing"
+          />
+        </div>
+      </div>
+      <div class="col-2 input-group">
+        <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect"
+          >Preference</label
+        >
+        <select class="custom-select" id="inlineFormCustomSelect">
+          <option *ngFor="let secenek of aramaYeri">{{ secenek }}</option>
+        </select>
+
+        <div class="col-auto input-group-append">
+          <button type="submit" class="btn btn-primary">Git</button>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
