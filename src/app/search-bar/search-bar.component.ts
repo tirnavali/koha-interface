@@ -22,4 +22,8 @@ export class SearchBarComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onSearch() {
+    alert("Ara");  
+  }
+
 }

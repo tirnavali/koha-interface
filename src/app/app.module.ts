@@ -11,6 +11,9 @@ import { OtherControlsComponent } from './other-controls/other-controls.componen
 import { BookshelfComponent } from './bookshelf/bookshelf.component';
 import { FooterComponent } from './footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ShelfNavigationComponent } from './bookshelf/shelf-navigation/shelf-navigation.component';
+import { BooklistComponent } from './bookshelf/booklist/booklist.component';
+import { BookfilterComponent } from './bookshelf/bookfilter/bookfilter.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +22,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     SearchBarComponent,
     OtherControlsComponent,
     BookshelfComponent,
-    FooterComponent
+    FooterComponent,
+    ShelfNavigationComponent,
+    BooklistComponent,
+    BookfilterComponent
   ],
   imports: [
     BrowserModule,

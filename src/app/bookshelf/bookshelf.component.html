@@ -1,29 +1,53 @@
 <div class="bookshelf">
     <div>
-        <p>Ana sayfa</p>
+        <app-shelf-navigation></app-shelf-navigation>
     </div>
-    <div class="container">
-        <div>
-            <ul>
-                <li><a href="#">Yeni Yayınlar</a></li>
-                <li><a href="#">Yeni Yayınlar</a></li>
-            </ul>
-            
-        </div>
-        <div>
-            <h5>Hesabınız ile oturum açın:</h5>
-            <hr>
-            <form class="form">
-                <div class="form-group">
-                    <label>Oturum Aç:</label>
-                    <input class="form-control" type="text">
-                </div>
-                <div class="form-group">
-                    <label>Şifre:</label>
-                    <input class="form-control" type="text">
-                </div>
 
-            </form>
+    <div class="">
+        <div class="row">
+            <div class="col-2">
+                <app-bookfilter></app-bookfilter>
+            </div>
+            <div class="col-10">
+                <app-booklist></app-booklist>
+            </div>
         </div>
+        
+        
+    </div>
+
+    
+    <div class="">
+        <div class="row justify-content-between">
+            <div class="col-4">
+                <div>
+                    <ul>
+                        <li><a href="#">Yeni Yayınlar</a></li>
+                        <li><a href="#">Yeni Yayınlar</a></li>
+                    </ul>
+                    
+                </div>
+            </div>
+           
+            <div class="col-4">
+                <div>
+                    <h5>Hesabınız ile oturum açın:</h5>
+                    <hr>
+                    <form class="form">
+                        <div class="form-group">
+                            <label>Oturum Aç:</label>
+                            <input class="form-control" type="text">
+                        </div>
+                        <div class="form-group">
+                            <label>Şifre:</label>
+                            <input class="form-control" type="text">
+                        </div>
+                        <button type="submit" class="session">Oturum Aç</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+       
     </div>
 </div>
