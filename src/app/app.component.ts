@@ -8,5 +8,15 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'koha-app';
   searchKeyword = "";
-  searchResult = [{"title": "Türkiye'yi anlamak", "isbn": "12345678900" }]
+  searchResult = [{"title": "Türkiye'yi anlamak", "isbn": "12345678900" }];
+  user = {};
+
+  onLoginAcquired(loginData: {username: string; password: string}) {
+    this.user = loginData;
+  }
 }
+
+
+
+
+
