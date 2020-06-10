@@ -29,11 +29,41 @@
         <li role="menuitem"><a class="dropdown-item" href="#">Türkçe</a></li>
       </ul>
       <ul class="my-2">
-        <a href="#" class="my-2">Hesabınız ile oturum açın</a>
+        <a class="" href="#" (click)="openModal(template)">Hesabınız ile oturum açın </a>
       </ul>
       <ul class="my-2">
         <a href="#">Arama geçmişi [x]</a>
       </ul>
     </div>
   </div>
+
+  <ng-template #template>
+    <div class="modal-header">
+      <h4 class="modal-title pull-left">Hesabınız ile oturum açın</h4>
+      <button
+        type="button"
+        class="close pull-right"
+        aria-label="Close"
+        (click)="modalRef.hide()"
+      >
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <form>
+      <div class="modal-body">
+        <div class="form-group">
+          <label>Oturum aç:</label>
+          <input [(ngModel)]="username" name="first" class="form-control" type="text" />
+        </div>
+        <div class="form-group">
+          <label>Şifre</label>
+          <input [(ngModel)]="password" name="second" class="form-control" type="password" />
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary">Vazgeç</button>
+        <button class="btn btn-primary" (click)="onLogin()">Giriş</button>
+      </div>
+    </form>
+  </ng-template>
 </nav>

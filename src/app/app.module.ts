@@ -1,7 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
-import { BsDropdownModule} from 'ngx-bootstrap/dropdown'
+import { BsDropdownModule} from 'ngx-bootstrap/dropdown';
+import { ModalModule} from 'ngx-bootstrap/modal';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -28,11 +30,13 @@ import { BookfilterComponent } from './bookshelf/bookfilter/bookfilter.component
     BookfilterComponent
   ],
   imports: [
+    FormsModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     TooltipModule.forRoot(),
-    BsDropdownModule.forRoot()
+    BsDropdownModule.forRoot(),
+    ModalModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

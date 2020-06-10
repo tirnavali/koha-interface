@@ -8,4 +8,5 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'koha-app';
   searchKeyword = "";
+  searchResult = [{"title": "Türkiye'yi anlamak", "isbn": "12345678900" }]
 }
